@@ -10,7 +10,8 @@ Require and config:
 const Weth = require('weth');
 Weth.config({
     web3: web3, // your web3,
-    contractAddress: contractAddress// weth's contract address
+    contractAddress: contractAddress, // weth's contract address
+    ownerAddress: ownerAddress // weth's owner address
 });
 
 ```

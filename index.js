@@ -1,10 +1,17 @@
-const ethTx             = require('ethereumjs-tx');
+const ethTx     = require('ethereumjs-tx');
+const WethAbi   = require('./lib/contract/Weth_ABI.json');
 let Web3;
 let contractAddress;
+let ownerAddress;
+let contract;
 module.exports = {
     config: (config) => {
         Web3 = config.web3;
         contractAddress = config.contractAddress;
+        ownerAddress = config.ownerAddress;
+        contract        = new Web3.eth.Contract(WethAbi, contractAddress, {
+            from: ownerAddress
+        });
     },
     withdraw: (from, privateKeyUser, amount) => {
         let rawTransaction;

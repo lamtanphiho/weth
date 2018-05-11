@@ -1,0 +1,32 @@
+{
+  "name": "weth",
+  "version": "1.0.0",
+  "description": "call weth's smart contract",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamtanphiho/weth.git"
+  },
+  "keywords": [
+    "weth",
+    "withdraw",
+    "deposit",
+    "smart",
+    "contract",
+    "web3",
+    "ethereum",
+    "npm"
+  ],
+  "author": "lamtanphiho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lamtanphiho/weth/issues"
+  },
+  "homepage": "https://github.com/lamtanphiho/weth#readme"
+}

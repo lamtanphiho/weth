@@ -19,6 +19,7 @@ module.exports = {
         const amountTransferHex = '0x' + amountTransfer.toString(16);
         const privKey           = Buffer.from(privateKeyUser, 'hex');
         return Web3.eth.getTransactionCount(from).then(nonce => {
+            nonce = nonce ? nonce : ++nonce;
             rawTransaction = {
                 'from'    : from,
                 'nonce'   : '0x' + nonce.toString(16),
@@ -42,6 +43,7 @@ module.exports = {
         const amountTransferHex = '0x' + amountTransfer.toString(16);
         const privKey           = Buffer.from(privateKeyUser, 'hex');
         return Web3.eth.getTransactionCount(from).then(nonce => {
+            nonce = nonce ? nonce : ++nonce;
             rawTransaction = {
                 'from'    : from,
                 'nonce'   : '0x' + nonce.toString(16),
